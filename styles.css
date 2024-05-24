@@ -1,0 +1,138 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    text-align: center;
+    color: white;
+    z-index: 1;
+    position: absolute;
+}
+
+.title {
+    font-family: 'Jaro', sans-serif;
+    font-size: 5rem;
+    margin: 0;
+}
+
+.subtitle {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.instruction {
+    font-family: 'Josefin Sans', sans-serif;
+    color: red;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+#code-input {
+    padding: 15px;
+    font-size: 1.2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%; /* Make input width 100% */
+    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .title {
+        font-size: 4rem;
+    }
+
+    .subtitle, .instruction, #code-input, button {
+        font-size: 1rem;
+    }
+
+    .instruction {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #code-input {
+        padding: 12px;
+    }
+
+    button {
+        padding: 12px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 3rem;
+    }
+
+    .subtitle, .instruction, #code-input, button {
+        font-size: 0.9rem;
+    }
+
+    .instruction {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #code-input {
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px 20px;
+    }
+}
