@@ -11,21 +11,23 @@ body, html {
     position: relative;
 }
 
-.video-container {
+.background-container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    background-size: cover;
+    background-position: center;
     z-index: -1;
-    pointer-events: none; /* Prevents interaction with the video */
-    overflow: hidden;
 }
 
-#background-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.detective-background {
+    background-image: url('탐정배경.gif');
+}
+
+.earth-background {
+    background-image: url('지구.gif');
 }
 
 .content {
